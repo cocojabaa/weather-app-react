@@ -1,0 +1,4 @@
+@mixin text-style($size: 1rem, $weight: 400) {
+  font-size: $size;
+  font-weight: $weight;
+}

@@ -1,0 +1,25 @@
+@use '../../styles/mixins' as *;
+
+.main-info {
+  display: flex;
+  gap: 2rem;
+
+  &__weather_svg {
+    width: 6rem;
+  }
+
+  &__weather-holder {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__temperature {
+    @include text-style(3rem, 600);
+    margin-bottom: -1rem;
+  }
+
+  &__weather-description {
+    @include text-style(1.5rem);
+    text-align: center;
+  }
+}

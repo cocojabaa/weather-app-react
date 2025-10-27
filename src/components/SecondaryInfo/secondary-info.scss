@@ -1,0 +1,20 @@
+@use '../../styles/mixins' as *;
+
+.secondary-info {
+  display: flex;
+  flex-direction: column;
+
+  &__text-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__title {
+    @include text-style(1.5rem, 600);
+  }
+
+  &__value {
+    @include text-style(1.5rem, 400);
+  }
+}

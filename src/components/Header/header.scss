@@ -1,0 +1,17 @@
+@use '../../styles/mixins' as *;
+
+.header {
+  &__week-day {
+    @include text-style(2.5rem, 600);
+  }
+  &__date {
+    @include text-style(1.3rem);
+  }
+  &__location-holder {
+    display: flex;
+    gap: 0.5rem;
+  }
+  &__location-text {
+    @include text-style(1.3rem);
+  }
+}
