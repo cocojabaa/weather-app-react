@@ -1,4 +1,4 @@
-import './styles/main.scss';
+import './app.scss';
 import { Header } from './components/Header/Header.tsx';
 import { MainInfo } from './components/MainInfo/MainInfo.tsx';
 import { SecondaryInfo } from './components/SecondaryInfo/SecondaryInfo.tsx';

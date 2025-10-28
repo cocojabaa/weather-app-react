@@ -1,15 +1,6 @@
-@use './custom-normalize';
-@use './vars';
-@use './breakpoints';
-
-@keyframes wave {
-  0% {
-    background-position: 0 50%;
-  }
-  100% {
-    background-position: 100% 50%;
-  }
-}
+@use './styles/custom-normalize';
+@use './styles/vars';
+@use './styles/breakpoints';
 
 :root {
   font-family: 'Montserrat', 'Times New Roman', sans-serif;
@@ -57,7 +48,7 @@
 
 .main-info-card {
   height: 600px;
-  background-image: url('src/assets/images/foggy.jpg');
+  background-image: url('assets/images/foggy.jpg');
   position: relative;
   border-radius: 15px;
   padding: 2rem;
@@ -91,4 +82,6 @@
   box-shadow: #0005 20px 0 40px -10px inset;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }

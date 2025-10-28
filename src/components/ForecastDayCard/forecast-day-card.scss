@@ -1,9 +1,18 @@
 .forecast-day-card {
-  background: #272e37;
+  background: var(--forecast-card-color);
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 10px;
   gap: 0.3rem;
   padding: 1rem;
+
+  &--active {
+    background: var(--active-forecast-card-color);
+    color: var(--forecast-card-color);
+
+    path {
+      fill: var(--forecast-card-color);
+    }
+  }
 }

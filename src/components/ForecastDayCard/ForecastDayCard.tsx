@@ -1,15 +1,17 @@
-import foggySVG from '../../assets/icons/foggy.svg';
 import './forecast-day-card.scss';
+import { CloudyIcon } from '../Icons';
+// import type {IconType} from "../Icons";
 
-export const ForecastDayCard = () => {
+type ForecastDayCardIProps = {
+  active?: boolean;
+};
+
+export const ForecastDayCard = ({ active = false }: ForecastDayCardIProps) => {
   return (
-    <div className="forecast-day-card">
-      <img
-        draggable="false"
-        src={foggySVG}
-        alt="icon"
-        className="forecast-day-card__svg"
-      />
+    <div
+      className={`forecast-day-card${active ? ' forecast-day-card--active' : ''}`}
+    >
+      <CloudyIcon className="forecast-day-card__svg" />
       <p className="forecast-day-card__week-day">Ср</p>
       <p className="forecast-day-card__temperature">30 °C</p>
     </div>

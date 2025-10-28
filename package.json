@@ -18,7 +18,8 @@
     "prettier": "^3.6.2",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "sass": "^1.93.2"
+    "sass": "^1.93.2",
+    "vite-plugin-svgr": "^4.5.0"
   },
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx,md,json,css,scss}": [
