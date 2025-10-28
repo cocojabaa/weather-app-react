@@ -3,6 +3,7 @@ import { Header } from './components/Header/Header.tsx';
 import { MainInfo } from './components/MainInfo/MainInfo.tsx';
 import { SecondaryInfo } from './components/SecondaryInfo/SecondaryInfo.tsx';
 import { Forecast } from './components/Forecast/Forecast.tsx';
+import kirbiGIF from './assets/gifs/kirbi.gif';
 
 function App() {
   return (
@@ -17,12 +18,7 @@ function App() {
           <SecondaryInfo />
           <Forecast />
         </div>
-        <img
-          draggable="false"
-          id="kirbi"
-          src="src/assets/images/kirbi.gif"
-          alt="gif"
-        />
+        <img draggable="false" id="kirbi" src={kirbiGIF} alt="gif" />
       </div>
     </div>
   );

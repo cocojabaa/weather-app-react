@@ -40,10 +40,11 @@
 }
 
 #kirbi {
-  height: 8rem;
+  height: 12rem;
   position: absolute;
-  right: 100px;
-  top: 100px;
+  right: 4rem;
+  top: 3rem;
+  z-index: -200;
 }
 
 .main-info-card {
